@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FakeIG</string>
+    <string name="account_name">Name Account</string>
 </resources>
