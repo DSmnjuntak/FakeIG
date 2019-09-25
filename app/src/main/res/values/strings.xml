@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">FakeIG</string>
-    <string name="detail" >detail</string>
-    <string name="account_name" >Account Name</string>
-    <string name="account_image" >Account Image</string>
 </resources>
