@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_small_margin">
+
+    <RelativeLayout
+        android:id="@+id/upper_layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_account_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/account_image"
+            tools:src="@android:color/darker_gray" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_small_margin"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:gravity="left|center_vertical|end" />
+
+        <LinearLayout
+            android:id="@+id/upper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/img_account_photo"
+            android:layout_toRightOf="@id/img_account_photo">
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/account_name" />
+
+            <TextView
+                android:id="@+id/tv_hotel_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="@string/places" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="403dp"
+        android:layout_height="307dp"
+        android:layout_below="@id/upper_layout_image"
+        android:maxHeight="200dp"
+        android:src="@drawable/user" />
+
+
+
+</RelativeLayout>

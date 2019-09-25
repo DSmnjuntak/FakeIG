@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">FakeIG</string>
     <string name="account_name">Name Account</string>
+    <string name="account_image" >Image Account</string>
+    <string name="places" >maps</string>
 </resources>
