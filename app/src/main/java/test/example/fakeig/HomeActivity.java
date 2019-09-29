@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
     public void mainView() {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<SnapModel> models = SnapData.getAllData();
-        HomeAdapter adapter = new HomeAdapter(this, models);
+        SnapAdapter adapter = new SnapAdapter(this, models);
         recyclerView.setAdapter(adapter);
     }
 }
